@@ -111,8 +111,4 @@ private:
 	uavcan::Publisher<uavcan::equipment::esc::RawCommand>			_uavcan_pub_raw_cmd;
 	uavcan::Subscriber<uavcan::equipment::esc::Status, StatusCbBinder>	_uavcan_sub_status;
 
-	/*
-	 * ESC states
-	 */
-	uint8_t				_max_number_of_nonzero_outputs{0};
 };
